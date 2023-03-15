@@ -7,7 +7,7 @@ const PROMPT = process.env.PROMPT;
 const LANG = process.env.LANGUGAGE;
 const MAX_PATCH_COUNT = 4000;
 
-export = (app: Probot) => {
+export default (app: Probot) => {
   const loadChat = async (context: Context) => {
     if (OPENAI_API_KEY) {
       return new Chat(OPENAI_API_KEY, MODEL, LANG, PROMPT);
