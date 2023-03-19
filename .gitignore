@@ -7,3 +7,5 @@ coverage
 lib
 .vercel
 .public
+# Local Netlify folder
+.netlify
