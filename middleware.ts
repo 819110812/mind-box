@@ -19,10 +19,10 @@ export default async function middleware(request:any) {
       return rewrite(new URL('https://github.com/apps/prompt-code-reviewer'));
     }
   
-    if (!json.before || !json.after || !json.commits) {
-      console.log('invalid event');
-      return rewrite(new URL('https://github.com/apps/prompt-code-reviewer'));
-    }
+    // if (!json.before || !json.after || !json.commits) {
+    //   console.log('invalid event');
+    //   return rewrite(new URL('https://github.com/apps/prompt-code-reviewer'));
+    // }
   
     console.log('GO next');
     return next();
