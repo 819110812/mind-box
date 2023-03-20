@@ -1,7 +1,17 @@
-import { createNodeMiddleware, createProbot } from "probot";
+import { Probot, createNodeMiddleware, createProbot } from "probot";
 
-import {app} from "../../../src/bot";
+import {bot} from "../../../src/bot";
 
-const probot = createProbot();
+const appIdOptions = {
+    appId: process.env.APP_ID,
+    privateKey: process.env.PRIVATE_KEY,
+    secret: process.env.WEBHOOK_SECRET,
+}
 
-export default createNodeMiddleware(app, { probot, webhooksPath: '/api/github/webhooks' });
+
+const probot = new Probot({
+    ...appIdOptions,
+});
+
+
+export default createNodeMiddleware(bot, { probot, webhooksPath: '/api/github/webhooks' });

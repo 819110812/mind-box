@@ -1,4 +1,4 @@
 import { run } from "probot";
-import app from "./bot";
+import {bot} from "./bot";
 
-run(app)
+run(bot)
