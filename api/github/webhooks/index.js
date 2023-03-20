@@ -8,6 +8,7 @@ const appIdOptions = {
     secret: process.env.WEBHOOK_SECRET,
 }
 
+console.log(typeof bot);
 
 const probot = new Probot({
     ...appIdOptions,

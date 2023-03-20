@@ -1,9 +1,9 @@
 import { createLambdaFunction, createProbot } from '@probot/adapter-aws-lambda-serverless';
 
-import app from '../src/bot';
+import {bot} from '../src/bot';
 
 
-export const handler = createLambdaFunction(app, {
+export const handler = createLambdaFunction(bot, {
     probot: createProbot(),
 });
   
