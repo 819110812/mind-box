@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    z-index: -1;  
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.container .item_one{
+    background-color: #26262A;
+    width: 53em;
+    height: 53em;
+    z-index: -1;
+    position: fixed;
+    border-radius: 50%;
+    margin-bottom: 44em;
+}
+
+.container .item_two {
+    background-color: #16151A;
+    width: 68em;
+    height: 68em;
+    z-index: -2;
+    position: fixed;
+    border-radius: 50%;
+    margin-top: -46em;
+}
+
+.container .item_three {
+    background-color: #0E0D12;
+    width: 84em;
+    height: 84em;
+    z-index: -3;
+    position: fixed;
+    border-radius: 50%;
+    margin-top: -46em;
+}
